@@ -1,0 +1,8 @@
+﻿<StoreSchema xmlns="http://tempuri.org/StoreSchema.xsd">
+  <books>
+    <id>1</id>
+    <name>Book 01</name>
+    <price>8</price>
+    <author_id>1</author_id>
+  </books>
+</StoreSchema>

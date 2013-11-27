@@ -1,0 +1,14 @@
+﻿<StoreSchema xmlns="http://tempuri.org/StoreSchema.xsd">
+  <authors>
+    <id>1</id>
+    <name>Author 01</name>
+  </authors>
+  <authors>
+    <id>2</id>
+    <name>Author 02</name>
+  </authors>
+  <authors>
+    <id>3</id>
+    <name>Author 03</name>
+  </authors>
+</StoreSchema>
