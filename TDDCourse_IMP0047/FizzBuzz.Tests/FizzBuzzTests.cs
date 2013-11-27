@@ -9,12 +9,21 @@ namespace FizzBuzz.Tests
     [TestFixture]
     public class FizzBuzzTests
     {
-        [Test]
-        public void Answer_InputEqual1_OutputEqual1()
+        private FizzBuzz _fizzBuzz;
+
+        [SetUp]
+        public void Setup()
         {
-            string expectedOutput = "1";
-            FizzBuzz fb = new FizzBuzz();
-            string output = fb.Answer(1);
+            this._fizzBuzz = new FizzBuzz();
+        }
+
+        [Test]
+        [TestCase(1, "1")]
+        [TestCase(2, "2")]
+        [TestCase(3, "Fizz")]
+        public void Answer_InputEqualValue_OutputCorrect(int input, string expectedOutput)
+        {
+            string output = this._fizzBuzz.Answer(input);
             Assert.AreEqual(expectedOutput, output);
         }
     }
